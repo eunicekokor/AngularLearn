@@ -1,4 +1,5 @@
 AngularLearn
 ============
 
-learning the ways of the MVC, JS, and Angular
+Learning the ways of the MVC, JS, and Angular
+[] hola seniors
