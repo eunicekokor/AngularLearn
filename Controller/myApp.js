@@ -15,7 +15,12 @@ myApp.controller('UserCtrl', ['$scope', function ($scope) {
 		"username": "Emekable",
 		"id": "89101112"
 	};
+  
+    $scope.name = '';
+    $scope.email = '';
 }]);
+
+
 
 myApp.directive('customButton', function () {
 	return {
