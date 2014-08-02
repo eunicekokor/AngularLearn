@@ -1,13 +1,31 @@
 var myApp = angular.module('myApp', []);
 
 myApp.controller('MainCtrl', ['$scope', function ($scope) {
+	$scope.user = {};
+	$scope.user.username = '';
+	
+	$http({
+    	method: 'GET',
+    	url: '//localhost:9000/yay'
+  })
+  
+  .success(function (data, status, headers, config) {
+    $scope.user.username = data.user.name;
+  })
 
-  $scope.text = 'Hello, Angular fanatic.';
+  .error(function (data, status, headers, config) {
+    //
+  });
+  
 }]);
+
+
 
 myApp.controller('NavCtrl', ['$scope', function ($scope) {
 
 }]);
+
+
 
 myApp.controller('UserCtrl', ['$scope', function ($scope) {
 	$scope.user = {};
