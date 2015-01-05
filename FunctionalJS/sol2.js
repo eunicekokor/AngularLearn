@@ -19,3 +19,6 @@ Official Solution
 //Learning Point 3. higher order functions return functions, and
 //and that doesn't have to be complex, even when a function is an
 //input.
+
+//Looking back I realize now that the official solution is an
+//example of recursion! oh, the things you learn!
